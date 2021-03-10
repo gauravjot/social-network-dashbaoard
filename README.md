@@ -1,6 +1,6 @@
 # Social Network Dashboard
 
-This is a template built in pure HTMl and CSS.
+This is a template built in pure HTML and CSS with help of Bootstrap.
 
 ![Screenshot](screenshot.png)
 
