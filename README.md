@@ -1,6 +1,6 @@
 # Social Network Dashboard
 
-This is a template built in pure HTML and CSS with help of Bootstrap.
+This is a template built in pure HTML and CSS with help of Bootstrap. Check the live preview: [https://gauravjot.github.io/social-network-dashbaoard/](https://gauravjot.github.io/social-network-dashbaoard/)
 
 ![Screenshot](screenshot.png)
 
