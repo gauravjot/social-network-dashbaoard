@@ -1,285 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
-            integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-            crossorigin="anonymous"
-        />
-        <link href="styles.css" rel="stylesheet" />
-        <title>social network</title>
-    </head>
-    <body>
-        <!-- Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <div class="container-fluid row">
-                    <div class="col-lg-3 col-12 nav-brand">
-                        <h6>Navbar</h6>
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarToggler"
-                            aria-controls="navbarToggler"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <i class="fas fa-bars"></i>
-                        </button>
-                    </div>
-                    <div class="col-lg-9 col-12">
-                        <div
-                            class="collapse navbar-collapse"
-                            id="navbarToggler"
-                        >
-                            <div class="row w-100">
-                                <div class="col-lg-8 col-12">
-                                    <form class="d-flex">
-                                        <input
-                                            type="search"
-                                            placeholder="Search"
-                                            aria-label="Search"
-                                        />
-                                        <button type="submit">
-                                            <i class="fas fa-search"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                                <div class="col-lg-4 col-12">
-                                    <ul class="navbar-nav">
-                                        <li>
-                                            <a href="#"
-                                                >Logout<i
-                                                    class="fas fa-sign-out-alt"
-                                                ></i
-                                            ></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="navbar-spacer"></div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+			integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+			integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+			crossorigin="anonymous"
+		/>
+		<link href="styles.css" rel="stylesheet" />
+		<title>social network</title>
+	</head>
+	<body>
+		<!-- Navbar-->
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container">
+				<div class="container-fluid row">
+					<div class="col-lg-3 col-12 nav-brand">
+						<h6>Navbar</h6>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarToggler"
+							aria-controls="navbarToggler"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<i class="fas fa-bars"></i>
+						</button>
+					</div>
+					<div class="col-lg-9 col-12">
+						<div class="collapse navbar-collapse" id="navbarToggler">
+							<div class="row w-100">
+								<div class="col-lg-8 col-12">
+									<form class="d-flex">
+										<input
+											type="search"
+											placeholder="Search"
+											aria-label="Search"
+										/>
+										<button type="submit">
+											<i class="fas fa-search"></i>
+										</button>
+									</form>
+								</div>
+								<div class="col-lg-4 col-12">
+									<ul class="navbar-nav">
+										<li>
+											<a href="#"
+												>Logout<i class="fas fa-sign-out-alt"></i
+											></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="navbar-spacer"></div>
 
-        <!-- Main Section -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-12">
-                    <!-- Left Sidebar -->
-                    <section class="leftsidebar">
-                        <div class="d-flex user">
-                            <img
-                                class="rounded-circle"
-                                src="https://droidheat.com/cv/profile-picture.jpg"
-                                alt="profile picture"
-                            />
-                            <div>
-                                <h6>Gauravjot Garaya</h6>
-                                <span
-                                    >Pursuing to be a Software Developer</span
-                                >
-                            </div>
-                        </div>
-                        <div class="navigation">
-                            <button class="active"><i class="far fa-newspaper"></i>Feed</button>
-                            <button><i class="fas fa-user-friends"></i>Friends</button>
-                            <button><i class="far fa-user"></i>Profile</button>
-                            <button><i class="far fa-thumbs-up"></i>Liked</button>
-                            <button><i class="far fa-bookmark"></i>Saved</button>
-                        </div>
-                        <div class="about">
-                            <h6>About socialnetwork</h6>
-                            <p>socialnetwork is built with Django back-end serving API responses to React.js. Know more:</p>
-                            <div class="techs">
-                                <a href="https://github.com/gauravjot/social-network"><i class="fab fa-github"></i>Project Github</a>
-                                <a href="https://www.djangoproject.com/"><i class="fab fa-python python"></i>Django</a>
-                                <a href="https://reactjs.org/"><i class="fab fa-react reactjs"></i>React.js</a>
-                                <a href="https://www.postgresql.org/"><i class="fas fa-database sql"></i>PostgreSQL</a>
-                            </div>
-                            <p>Themeing with:</p>
-                            <div class="techs">
-                                <a href="https://fontawesome.com/"><i class="fab fa-font-awesome faw"></i>Font Awesome</a>
-                                <a href="https://getbootstrap.com/"><i class="fab fa-bootstrap bts"></i>Bootstrap</a>
-                            </div>
-                        </div>
-                        <div class="navbar-spacer"></div>
-                    </section>
-                </div>
-                <div class="col-lg-6 col-12 timeline">
-                    <div class="create-post">
-                        <h6>Post Something</h6>
-                        <div class="d-flex">
-                            <img class="rounded-circle" src="https://droidheat.com/cv/profile-picture.jpg" alt="profile-picture"/>
-                            <textarea placeholder="What's on your mind?" rows="1"></textarea>
-                            <button><i class="far fa-image"></i></button>
-                        </div>
-                        <div class="submit-btn">
-                            <button class="btn btn-primary btn-sm">Create Post</button>
-                        </div>
-                    </div>
-                    <div class="post card">
-                        <!-- Post User-->
-                        <div class="d-flex user">
-                            <img
-                                class="rounded-circle"
-                                src="person1.jpg"
-                                alt="profile picture"
-                            />
-                            <div>
-                                <h6>Ross Whitmore</h6>
-                                <span>5 mins ago</span>
-                            </div>
-                            <a href="#">
-                                <i class="fas fa-ellipsis-h"></i>
-                            </a>
-                        </div>
-                        <!-- Post Text-->
-                        <p>
-                            One of the perks of working in an internation company is sharing knowledge with you colleagues.
-                        </p>
-                        <!-- Post Image -->
-                        <img class="rounded post-picture" src="//unsplash.it/600/300"/>
-                        <!-- Post Actions -->
-                        <div class="d-flex post-actions">
-                            <button><i class="far fa-comment-alt"></i>25 Comments</button>
-                            <button><i class="far fa-thumbs-up"></i>120k Likes</button>
-                            <button><i class="far fa-share-square"></i>Share</button>
-                        </div>
-                        <div class="post-comment">
-                            <div class="d-flex user">
-                                <img
-                                    class="rounded-circle"
-                                    src="https://droidheat.com/cv/profile-picture.jpg"
-                                    alt="profile picture"
-                                />
-                                <input type="text" placeholder="Write your comment..."/>
-                                <button>
-                                    <i class="far fa-paper-plane"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post card">
-                        <!-- Post User-->
-                        <div class="d-flex user">
-                            <img
-                                class="rounded-circle"
-                                src="person1.jpg"
-                                alt="profile picture"
-                            />
-                            <div>
-                                <h6>Ross Whitmore</h6>
-                                <span>5 mins ago</span>
-                            </div>
-                            <a href="#">
-                                <i class="fas fa-ellipsis-h"></i>
-                            </a>
-                        </div>
-                        <!-- Post Text-->
-                        <p>
-                            If sun was little closer then our planet would have not sustained life as we know it. Cherish everyday!
-                        </p>
-                        <!-- Post Image -->
-                        <img class="rounded post-picture" src="//unsplash.it/300/600"/>
-                        <!-- Post Actions -->
-                        <div class="d-flex post-actions">
-                            <button><i class="far fa-comment-alt"></i>25 Comments</button>
-                            <button><i class="far fa-thumbs-up"></i>120k Likes</button>
-                            <button><i class="far fa-share-square"></i>Share</button>
-                        </div>
-                        <div class="post-comment">
-                            <div class="d-flex user">
-                                <img
-                                    class="rounded-circle"
-                                    src="https://droidheat.com/cv/profile-picture.jpg"
-                                    alt="profile picture"
-                                />
-                                <input type="text" placeholder="Write your comment..."/>
-                                <button>
-                                    <i class="far fa-paper-plane"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12 rightsidebar">
-                    <div class="card">
-                        <h6>Friend Suggestions</h6>
-                        <a href="#">
-                            <div class="d-flex user back-hover">
-                                <img
-                                    class="rounded-circle"
-                                    src="person2.jpg"
-                                    alt="profile picture"
-                                />
-                                <div>
-                                    <h6>Inaayah Drew</h6>
-                                    <span>Life without sound</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="d-flex user back-hover">
-                                <img
-                                    class="rounded-circle"
-                                    src="person3.jpg"
-                                    alt="profile picture"
-                                />
-                                <div>
-                                    <h6>Thomas Mclellan</h6>
-                                    <span>I'm a creative genius!</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="d-flex user back-hover">
-                                <img
-                                    class="rounded-circle"
-                                    src="person4.jpg"
-                                    alt="profile picture"
-                                />
-                                <div>
-                                    <h6>Lukas Schaefer</h6>
-                                    <span>Hello there :)</span>
-                                </div>
-                            </div>
-                        </a>
+		<!-- Main Section -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-12">
+					<!-- Left Sidebar -->
+					<section class="leftsidebar">
+						<div class="d-flex user">
+							<img
+								class="rounded-circle"
+								src="profile.png"
+								alt="profile picture"
+							/>
+							<div>
+								<h6>Gauravjot Garaya</h6>
+								<span>Pursuing to be a Software Developer</span>
+							</div>
+						</div>
+						<div class="navigation">
+							<button class="active">
+								<i class="far fa-newspaper"></i>Feed
+							</button>
+							<button><i class="fas fa-user-friends"></i>Friends</button>
+							<button><i class="far fa-user"></i>Profile</button>
+							<button><i class="far fa-thumbs-up"></i>Liked</button>
+							<button><i class="far fa-bookmark"></i>Saved</button>
+						</div>
+						<div class="about">
+							<h6>About socialnetwork</h6>
+							<p>
+								socialnetwork is built with Django back-end serving API
+								responses to React.js. Know more:
+							</p>
+							<div class="techs">
+								<a href="https://github.com/gauravjot/social-network"
+									><i class="fab fa-github"></i>Project Github</a
+								>
+								<a href="https://www.djangoproject.com/"
+									><i class="fab fa-python python"></i>Django</a
+								>
+								<a href="https://reactjs.org/"
+									><i class="fab fa-react reactjs"></i>React.js</a
+								>
+								<a href="https://www.postgresql.org/"
+									><i class="fas fa-database sql"></i>PostgreSQL</a
+								>
+							</div>
+							<p>Themeing with:</p>
+							<div class="techs">
+								<a href="https://fontawesome.com/"
+									><i class="fab fa-font-awesome faw"></i>Font
+									Awesome</a
+								>
+								<a href="https://getbootstrap.com/"
+									><i class="fab fa-bootstrap bts"></i>Bootstrap</a
+								>
+							</div>
+						</div>
+						<div class="navbar-spacer"></div>
+					</section>
+				</div>
+				<div class="col-lg-6 col-12 timeline">
+					<div class="create-post">
+						<h6>Post Something</h6>
+						<div class="d-flex">
+							<img
+								class="rounded-circle"
+								src="profile.png"
+								alt="profile-picture"
+							/>
+							<textarea
+								placeholder="What's on your mind?"
+								rows="1"
+							></textarea>
+							<button><i class="far fa-image"></i></button>
+						</div>
+						<div class="submit-btn">
+							<button class="btn btn-primary btn-sm">Create Post</button>
+						</div>
+					</div>
+					<div class="post card">
+						<!-- Post User-->
+						<div class="d-flex user">
+							<img
+								class="rounded-circle"
+								src="person1.jpg"
+								alt="profile picture"
+							/>
+							<div>
+								<h6>Ross Whitmore</h6>
+								<span>5 mins ago</span>
+							</div>
+							<a href="#">
+								<i class="fas fa-ellipsis-h"></i>
+							</a>
+						</div>
+						<!-- Post Text-->
+						<p>
+							One of the perks of working in an international company is
+							being able to grow with knowledge from your colleagues.
+						</p>
+						<!-- Post Image -->
+						<img class="rounded post-picture" src="//unsplash.it/600/300" />
+						<!-- Post Actions -->
+						<div class="d-flex post-actions">
+							<button><i class="far fa-comment-alt"></i>25 Comments</button>
+							<button><i class="far fa-thumbs-up"></i>120k Likes</button>
+							<button><i class="far fa-share-square"></i>Share</button>
+						</div>
+						<div class="post-comment">
+							<div class="d-flex user">
+								<img
+									class="rounded-circle"
+									src="profile.png"
+									alt="profile picture"
+								/>
+								<input type="text" placeholder="Write your comment..." />
+								<button>
+									<i class="far fa-paper-plane"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="post card">
+						<!-- Post User-->
+						<div class="d-flex user">
+							<img
+								class="rounded-circle"
+								src="person1.jpg"
+								alt="profile picture"
+							/>
+							<div>
+								<h6>Ross Whitmore</h6>
+								<span>5 mins ago</span>
+							</div>
+							<a href="#">
+								<i class="fas fa-ellipsis-h"></i>
+							</a>
+						</div>
+						<!-- Post Text-->
+						<p>
+							If sun was little closer then our planet would have not
+							sustained life as we know it. Cherish everyday!
+						</p>
+						<!-- Post Image -->
+						<img class="rounded post-picture" src="//unsplash.it/300/600" />
+						<!-- Post Actions -->
+						<div class="d-flex post-actions">
+							<button><i class="far fa-comment-alt"></i>13 Comments</button>
+							<button><i class="far fa-thumbs-up"></i>10.1k Likes</button>
+							<button><i class="far fa-share-square"></i>Share</button>
+						</div>
+						<div class="post-comment">
+							<div class="d-flex user">
+								<img
+									class="rounded-circle"
+									src="profile.png"
+									alt="profile picture"
+								/>
+								<input type="text" placeholder="Write your comment..." />
+								<button>
+									<i class="far fa-paper-plane"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-12 rightsidebar">
+					<div class="card">
+						<h6>Friend Suggestions</h6>
+						<a href="#">
+							<div class="d-flex user back-hover">
+								<img
+									class="rounded-circle"
+									src="person2.jpg"
+									alt="profile picture"
+								/>
+								<div>
+									<h6>Inaayah Drew</h6>
+									<span>Life without sound</span>
+								</div>
+							</div>
+						</a>
+						<a href="#">
+							<div class="d-flex user back-hover">
+								<img
+									class="rounded-circle"
+									src="person3.jpg"
+									alt="profile picture"
+								/>
+								<div>
+									<h6>Thomas Mclellan</h6>
+									<span>I'm a creative genius!</span>
+								</div>
+							</div>
+						</a>
+						<a href="#">
+							<div class="d-flex user back-hover">
+								<img
+									class="rounded-circle"
+									src="person4.jpg"
+									alt="profile picture"
+								/>
+								<div>
+									<h6>Lukas Schaefer</h6>
+									<span>Hello there :)</span>
+								</div>
+							</div>
+						</a>
 
-                        <button class="card-btn">Find more Friends</button>
-                    </div>
-                    <div class="card">
-                        <h6>Friend Requests</h6>
-                        <div class="d-flex user">
-                            <img
-                                class="rounded-circle"
-                                src="person5.jpg"
-                                alt="profile picture"
-                            />
-                            <div>
-                                <h6><a href="#">Troll Cat</a></h6>
-                                <span>Purrrrrrrrr</span>
-                                <div class="d-flex"><button class="btn btn-sm btn-outline-primary">Accept</button><button class="btn btn-sm btn-outline-danger">Decline</button></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+						<button class="card-btn">Find more Friends</button>
+					</div>
+					<div class="card">
+						<h6>Friend Requests</h6>
+						<div class="d-flex user">
+							<img
+								class="rounded-circle"
+								src="person5.jpg"
+								alt="profile picture"
+							/>
+							<div>
+								<h6><a href="#">Troll Cat</a></h6>
+								<span>Purrrrrrrrr</span>
+								<div class="d-flex">
+									<button class="btn btn-sm btn-outline-primary">
+										Accept</button
+									><button class="btn btn-sm btn-outline-danger">
+										Decline
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+		<script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>
